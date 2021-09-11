@@ -38,11 +38,11 @@ gulp.task('mv:fonts', function(done){
 gulp.task('build:html', function(done){
     gulp.src(path.src.html)
         .pipe(plumber())
-        // .pipe(htmlmin({
-        //     collapseWhitespace: true,
-        //     removeComments: true,
-        //     useShortDoctype: true
-        // }))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true,
+            useShortDoctype: true
+        }))
         .pipe(gulp.dest(path.build.html));
     done();
 });
