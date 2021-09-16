@@ -25,19 +25,20 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^4.6.0",
-    "jquery": "^3.6.0",
-    "node-sass": "^6.0.1"
+    "jquery": "^3.6.0"
   },
   "browserslist": [
     "Last 1 version, > 1%, IE 10"
   ],
   "devDependencies": {
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^5.0.0",
-    "gulp-terser": "^2.0.1"
+    "gulp-terser": "^2.0.1",
+    "node-sass": "^6.0.1"
   }
 }
