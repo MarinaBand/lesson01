@@ -24,7 +24,7 @@ const path = {
     src:{
         html:'src/*.{html,htm}',
         scss:'src/scss/main.scss',
-        js:'src/js/libs.js',
+        js:['src/js/libs.js','src/js/app.js'],
         fonts:'src/fonts/**/*.{eot,svg,ttf,woff,woff2}',
         img:'src/img/**/*.{jpg,gif,jpeg,png,svg,webp}',
     },
@@ -81,7 +81,7 @@ gulp.task('build:html', function(done){
 });
 
 gulp.task('build:scss', function(done){
-    gulp.src(path.src.scss)
+    gulp.src(path.src.scss,{sourcemaps: true})
         .pipe(plumber())
         .pipe(sass({
             outputStyle: 'compressed'
@@ -90,7 +90,7 @@ gulp.task('build:scss', function(done){
             cascade: false,
             remove: true
         }))
-        .pipe(gulp.dest(path.build.scss))
+        .pipe(gulp.dest(path.build.scss,{sourcemaps:'.'}))
         .pipe(reload({stream: true}));
     done();
 });
