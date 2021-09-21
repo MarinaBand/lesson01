@@ -1,0 +1,44 @@
+{
+  "name": "lesson01",
+  "version": "1.0.0",
+  "description": "lesson 01 tutorial",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarinaBand/lesson01.git"
+  },
+  "keywords": [
+    "html",
+    "lesson01",
+    "git",
+    "branches"
+  ],
+  "author": "Marina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarinaBand/lesson01/issues"
+  },
+  "homepage": "https://github.com/MarinaBand/lesson01#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0"
+  },
+  "browserslist": [
+    "Last 1 version, > 1%, IE 10"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "node-sass": "^6.0.1"
+  }
+}
